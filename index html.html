@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body style="margin:0; background-color:#e9ecef;font-family:Arial;">
+    <div style="width: 98%; max-width: 850px; margin: 40px auto; background-color: white; box-shadow: 0 0 10px red; ">
+        <div style="background-color: #007bff; padding: 25px; text-align: center; color: white; border-radius: 8px 8px 0 0;">
+            <h1 style="font-size: 24px; margin:0;">Sistema de registro</h1>
+        </div>
+        <div style="background-color: #343a40; padding: 15px; text-align: center;">
+            <h3 style="color: white; font-size: 18px; margin-bottom: 15px;">Menu:</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+            </div>
+        </div>
+        <div style="padding: 30px;">
+            <h2 style="font-weight: bold; font-size: 20px; margin-bottom: 20px">Fornmulario de registro</h2>
+            <form>
+                <label>Nombre:</label>
+                <input type="text" name="nombre" required style="width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 10px;"><br>
+                <label>Correo Electrónico</label>
+                <input type="gmail" name="correo" required style="width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 10px;"><br>
+                <label>Fecha:</label>
+                <input type="date" name="fecha" required style="width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 10px;"><br>
+                <label>Mencion de la carrera:</label>
+                <select name="mencion" style="width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 10px;"><br>
+                <option value="desarrollo de software">Desarrollo de software</option>
+                <option value="ciencia de datos">Ciencia datos</option>
+                <option value="ciberseguridad">Ciberseguridad</option>
+                <option value="informatica industrial">Informatica industrial</option>
+                <option value="inteligencia artificial">Inteligencia artificial</option>
+                </select><br>
+                <label>Edad:</label>
+                <input type="number" name="edad" min="17" max="100" required style="width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 10px;"><br><br>
+                <label>Turno:</label>
+                <input type="radio" name="turno" value="mañana">Mañana
+                <input type="radio" name="turno" value="tarde">Tarde
+                <input type="radio" name="turno" value="noche">Noche
+                <br><br>
+                <label>Servicios:</label>
+                <input type="checkbox" name="biblioteca">Biblioteca
+                <input type="checkbox" name="deportes">Deportes
+                <input type="checkbox" name="seguro">Seguro
+                <input type="checkbox" name="becas">Becas
+                <br><br>
+                <label>Comentarios:</label>
+                <textarea name="comentarios" rows="3" style="width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 10px;"></textarea><br><br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
